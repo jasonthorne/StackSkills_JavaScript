@@ -33,11 +33,36 @@
 		
 	//=========================================Operators:	
 	
-	/*
-	 == checks if values are equal
-	 === checks if value AND type are equal
-	*/
+		/*
+		 == checks if values are equal (using cohesion)
+		 === checks if value AND type are equal
+		*/
 		
+		var x=12;
+		var y="12";
+		
+		console.log(x == y); //checks only value, so is true
+		console.log(x === y); //checks value and type, so is false
+		console.log(x !== y); //'!' checks for type, so is also true. 
+		console.log(x != y); //'!' doesn't check type (just value), so is false. 
+		
+		
+		//Increment and decrement operators:
+		
+		//x++ returns value before incrementing. OPERATOR is the x. value is the OPERAND
+		//++x returns value after incrementing.
+		
+		var x=5;
+		console.log("x value is: " + x);
+		console.log("x++ value is: " + x++);
+		console.log("x value is now: " + x);
+		
+		console.log("++x value is: " + ++x);
+		console.log("x value is now: " + x);
+		
+		
+		
+	
 	</script>
     <body>
        
