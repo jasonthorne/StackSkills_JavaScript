@@ -88,6 +88,7 @@
 		console.log(welcome1);
 		
 		//object function constructor:
+		//Not really needed as primitives are temporarily converted to objects when necessary. ++++++++++++
 		var welcome2 = new String("I'm from an object constructor!"); //String object (permanently an object)
 		console.log(welcome2);
 		
@@ -96,7 +97,6 @@
 		console.log(welcome1.toUpperCase()); //primitive here is given an object wrapper, temporarily converting it to an object.
 		
 		//primitives can be changed to objects, then back to primitives. Objects (welcome2) CANT! +++++++++
-		
 		console.log(typeof welcome1); //a primitive
 		console.log(typeof welcome1.length); //converted to object during invocation
 		console.log(typeof welcome1); //a primitive// back to primitive
