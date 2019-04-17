@@ -3,10 +3,9 @@
     <head>
 	</head>
 	<script type="text/javascript">
-		console.log("Yo");
 		//==============================Objects Part 1:
 		
-		//object literal notation (with key and value pairs): 
+		//object literal notation (with key and value pairs (properties and values)): 
 		var car = {
 			wheels: 4,
 			colour: "red",
@@ -40,6 +39,60 @@
 		//values can be accessed the same way as assigned:
 		console.log(car3.colour);
 		console.log(car2['mpg']);
+		
+		
+		
+		//==============================Objects Part 2:
+		
+		//adding a new property using bracket notation:
+		car2['origin year'] = 1983; 
+		console.log(car2);
+		
+		/*
+		you cant add new properties using dot notion for properties which:
+		+ have spaces (eg: made in)
+		+ have special characters (eg: length&width)
+		+ start with numbers
+		+ use reserved words (var, function, const..)
+		*/
+		
+		//adding a function property using bracket notation (wont work with dot notation):
+		car2['function'] = "drive";  //quotes needed around 'function', so it knows its being used as it's reserved word. 
+		console.log(car2);
+		
+		//values can be reassigned the same way as assigned/accessed:
+		car2.colour = "black";
+		console.log(car2);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	
 		
 	</script>
