@@ -14,7 +14,7 @@
 			gallons: 12 //no comma here! 
 		}; //dont forget colon! 
 		
-		console.log(car);
+		//console.log(car);
 		
 		//Adding properties with values using dot notation:
 		var car2 = {};
@@ -24,7 +24,7 @@
 			car2.engine = 1;
 			car2.gallons = 10;
 			
-		console.log(car2);
+		//console.log(car2);
 		
 		//Adding properties with values using bracket notation:
 		var car3 = {};
@@ -34,11 +34,11 @@
 			car3['engine'] = 1;
 			car3['gallons'] = 20;
 			
-		console.log(car3);
+		//console.log(car3);
 		
 		//values can be accessed the same way as assigned:
-		console.log(car3.colour);
-		console.log(car2['mpg']);
+		//console.log(car3.colour);
+		//console.log(car2['mpg']);
 		
 		
 		
@@ -46,7 +46,7 @@
 		
 		//adding a new property using bracket notation:
 		car2['origin year'] = 1983; 
-		console.log(car2);
+		//console.log(car2);
 		
 		/*
 		you cant add new properties using dot notion for properties which:
@@ -58,26 +58,48 @@
 		
 		//adding a function property using bracket notation (wont work with dot notation):
 		car2['function'] = "drive";  //quotes needed around 'function', so it knows its being used as it's reserved word. 
-		console.log(car2);
+		//console.log(car2);
 		
 		//values can be reassigned the same way as assigned/accessed:
 		car2.colour = "black";
-		console.log(car2);
+		//console.log(car2);
 		
 		
+		//==============================Object Constructor Functions:
 		
 		
+		function Animal(name, foodtype, kingOfJungle){
+			this.name = name;
+			this.foodtype = foodtype;
+			this.kingOfJungle = kingOfJungle;
+		}
+		
+		//creating objects from function:
+		var animal1 = new Animal("Snoopy", "carnivore", false);
+		var animal2 = new Animal("Garfield", "Lasagne", true);
+		
+		//console.log(animal1);
 		
 		
+		//==============================JavaScript Primitives:
 		
 		
+		var welcome1 = "yo dawg!"; //String primitive 
+		console.log(welcome1);
 		
+		//object function constructor:
+		var welcome2 = new String("I'm from an object constructor!"); //String object (permanently an object)
+		console.log(welcome2);
 		
+		//The object from of ANY primitive carries with it methods for that data type eg:
+		console.log(welcome2.toUpperCase());
+		console.log(welcome1.toUpperCase()); //primitive here is given an object wrapper, temporarily converting it to an object.
 		
+		//primitives can be changed to objects, then back to primitives. Objects (welcome2) CANT! +++++++++
 		
-		
-		
-		
+		console.log(typeof welcome1); //a primitive
+		console.log(typeof welcome1.length); //converted to object during invocation
+		console.log(typeof welcome1); //a primitive// back to primitive
 		
 		
 		
