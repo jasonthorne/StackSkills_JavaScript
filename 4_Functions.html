@@ -4,7 +4,6 @@
 	</head>
 	<script type="text/javascript">
 		
-		
 		//Function Expression:
 		//unlike regular function, this cant be invoked b4 declaration. (is hoisted to top as undefined) 
 		var func1 = function(){ //anonymous function
@@ -13,7 +12,11 @@
 		
 		func1();
 		
-		
+		//IIFE (immediately invoked function expression):
+		//Var here stores the RESULT of the run function
+		var func2 = (function(a, b){ //wrapped in another set of parentheses
+			console.log(a + b);
+		}("da", "wg")); //extra '()' immediately calls the function and can take args. Is a statement, so needs colon.
 		
 	</script>
     <body>
