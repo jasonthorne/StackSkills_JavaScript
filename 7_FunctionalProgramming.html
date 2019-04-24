@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	</head>
+	<script type="text/javascript">
+		//==============================Functional Programming 1:
+		
+		//Functional Programming: Programming with functions!
+		
+		/*
+		Higher order function:
+		A function that can take another function as an argument, or that returns a function as a result
+		*/
+		
+		//--------------------Filter()--------------------
+		//A function on arrays. It takes a function as an argument (which has a callback value) and creates a new array
+		//containing filtered elements of the argument arrays callbacks.
+		
+		var testNums = [92, 87, 54, 63, 75, 59];
+		
+		var passingTest = function(test){ //assigned the value of an anonymous function
+			return test > 60; //returns true or false
+		}
+		
+		var graduation = testNums.filter(passingTest);
+		console.log(graduation);
+		
+		//OR:
+		
+		var graduation2 = testNums.filter(function(test){ 
+			return test > 60; 
+		})
+		
+		console.log(graduation2);
+		
+	</script>
+    <body>
+       
+    </body>
+</html>
