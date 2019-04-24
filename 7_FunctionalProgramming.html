@@ -33,6 +33,31 @@
 		
 		console.log(graduation2);
 		
+		
+		
+		//=========
+		
+		var forecast = [
+		{day: "Monday", sun: true},
+		{day: "Tuesday", sun: false},
+		{day: "Wednesday", sun: true},
+		{day: "Thursday", sun: false},
+		{day: "Friday", sun: true},
+		{day: "Saturday", sun: false},
+		{day: "Sunday", sun: true}
+		];
+		
+		var sunnyDays = forecast.filter(function(weatherObj){
+			return weatherObj.sun; //return when sun is true
+		})
+		
+		console.log(sunnyDays);
+		
+		
+		//==============================Map:
+		
+		
+		
 	</script>
     <body>
        
