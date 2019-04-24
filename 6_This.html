@@ -13,6 +13,56 @@
 		*/
 		
 		
+		//In objects, 'this' is set to the object the method is called on
+		
+		
+		let cat = {};
+		
+		cat = {
+			sound: "meow",
+			speak: function(){
+					console.log(this.sound); //'this' here refers to the obj (same as saying 'cat.sound')
+				}
+		};
+		
+		cat.speak();
+		
+		//here a FUNCTION is being assigned. Not a METHOD being called, so 'this' has lost it's context: 
+		let speakFunction = cat.speak;
+		
+		speakFunction(); //contextless, so undefined
+		
+		//Binding 'this' to the object. 
+		//'this' in the speak function when called will now look to the cat object for context. 
+		let speakFunctionBind = speakFunction.bind(cat); 
+		
+		speakFunctionBind();
+		
+		//+++++++++Another example:+++++++++
+		
+		//two person objects:
+		let person1 = {
+			name: "Alex"
+		};
+		
+		let person2 = {
+			name: "Alexis"
+		};
+		
+		//function for returning name:
+		function namer(){
+			return this.name; //no context provided for 'this'. (it isn't naming person1 or person2)
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 	</script>
     <body>
