@@ -83,13 +83,63 @@
 		/*
 		The call() method calls a function with a given 'this' value and arguments provided individually: 
 		
-		func.call(object, arg1, arg2..)
+		//The call function takes an object that you want to use as the context for 'this', and any arguments you need to pass it:
+		function.call(thisContextObject, arg1, arg2..) 
 		
 		A FUNCTION is different from a METHOD, in that a method is a function ATTACHED to an object.
 		Which would then give the 'this' keyword context. 
 
 		Because call() is on a function the 'this' keyword doesn't have context. 
 		*/
+		
+		var myObj = {
+			num:2
+		};
+		
+		var addToThis = function(a,b,c){
+			return this.num +a+b+c; //'this.num' doesn't have a context
+		};
+		
+		//invoking .call() and passing it the object that we want to use as the CONTEXT of the 'this' keyword.
+		console.log(addToThis.call(myObj, 1,2,3)); 
+		
+		
+		//+++++++++Another example:+++++++++
+		
+		var personA = {
+			firstName: "Dan",
+			lastName: "daMan"
+		};
+		
+		var personB = {
+			firstName: "Jace",
+			lastName: "daAce"
+		};
+		
+		function hello(greeting){
+			console.log(greeting + " " + this.firstName + " " + this.lastName); //this's here have no context
+		}
+		
+		//passing the object that we want "this" to have the context of, and the argument that the function needs.
+		hello.call(personA, "Yo"); 
+		
+		hello.call(personB, "Sup"); 
+		
+		
+		//+++++++++Another example:+++++++++
+		
+		var myLanguages = function(lang1, lang2, lang3){
+			console.log("My name is " + this.name + " and I know " + lang1 + ", " )
+		}
+		
+		//=========================================This & Apply:
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		
