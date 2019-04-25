@@ -129,8 +129,11 @@
 		//+++++++++Another example:+++++++++
 		
 		var myLanguages = function(lang1, lang2, lang3){
-			console.log("My name is " + this.name + " and I know " + lang1 + ", " )
-		}
+			console.log("My name is " + this.name + " and I know " + lang1 + ", " + lang2 + " and " + lang3);
+		};
+		
+		
+		myLanguages.call(???, "Java", "JavaScript", "Elven");
 		
 		//=========================================This & Apply:
 		
