@@ -3,7 +3,7 @@
     <head>
 	</head>
 	<script type="text/javascript">
-		//==============================This & Bind:
+		//=========================================This & Bind:
 		
 		/*
 		In most cases 'this' is determined by how a function is called. 
@@ -13,7 +13,7 @@
 		*/
 		
 		
-		//In objects, 'this' is set to the object the method is called on
+		//In objects, 'this' is set to the object the method is called on.
 		
 		
 		let cat = {};
@@ -53,6 +53,48 @@
 		function namer(){
 			return this.name; //no context provided for 'this'. (it isn't naming person1 or person2)
 		}
+		
+		
+		//Binding 'this' in namer function to person1, THEN invoking the namer function.
+		let bindExample1 = namer.bind(person1)(); //DONT FORGET THE INVOCATION!!
+		console.log(bindExample1);
+		
+		
+		//+++++++++Another example:+++++++++
+		
+		let number = {
+			x: 24,
+			y: 22
+		};
+		
+		let count = function(){
+			console.log(this.x + this.y);
+		}
+		
+		//binding 'this' in count function to number, THEN invoking the count function.
+		count.bind(number)();
+		//OR:
+		newFunc = count.bind(number);
+		newFunc();
+		
+		
+		//=========================================This & Call:
+		
+		/*
+		The call() method calls a function with a given 'this' value and arguments provided individually: 
+		
+		func.call(object, arg1, arg2..)
+		
+		A FUNCTION is different from a METHOD, in that a method is a function ATTACHED to an object.
+		Which would then give the 'this' keyword context. 
+
+		Because call() is on a function the 'this' keyword doesn't have context. 
+		*/
+		
+		
+		
+		
+		
 		
 		
 		
