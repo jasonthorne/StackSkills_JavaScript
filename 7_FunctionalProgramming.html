@@ -11,11 +11,15 @@
 		/*
 		Higher order function:
 		A function that can take another function as an argument, or that returns a function as a result
+		
+		
+		//Pure Function: 
+		A function that if given the same input will provide the same output. (eg not math.random, which is 'impure').
 		*/
 		
 		//--------------------Filter()--------------------
-		//A function on arrays. It takes a function as an argument (which has a callback value) and creates a new array
-		//containing filtered elements of the argument arrays callbacks.
+		//A function on arrays. It takes a function as an argument (which has a return value) and creates a new array
+		//containing filtered elements of the argument array's callbacks.
 		
 		var testNums = [92, 87, 54, 63, 75, 59];
 		
@@ -36,7 +40,7 @@
 		
 		
 		
-		//=========
+		//+++++++++Another example:+++++++++
 		
 		var forecast = [
 			{day: "Monday", sun: true},
@@ -56,6 +60,43 @@
 		
 		
 		//==============================Map:
+		
+		//MAP() - Creates a new array with the results of calling a provided function on every element of an array. ++++++++++++++++++++
+		
+		var forecast = [
+			{day: "Monday", sun: true, humidity: 10}, //remember: each element in this array is an object separated by commas
+			{day: "Tuesday", sun: false, humidity: 100},
+			{day: "Wednesday", sun: true, humidity: 100},
+			{day: "Thursday", sun: false, humidity: 25},
+			{day: "Friday", sun: true, humidity: 100},
+			{day: "Saturday", sun: false, humidity: 15},
+			{day: "Sunday", sun: true, humidity: 100}
+		];
+		
+		
+		var humidity = forecast.map(function(dayObjElement){ //IIFE passing in each object element within the 'forecast' array
+			return dayObjElement.humidity; //return the 'humidity' property of each passed in element.
+		})
+		
+		console.log(humidity);
+		
+		
+		//+++++++++Another example:+++++++++
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		
