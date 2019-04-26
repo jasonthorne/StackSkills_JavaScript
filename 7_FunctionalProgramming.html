@@ -39,7 +39,6 @@
 		console.log(graduation2);
 		
 		
-		
 		//+++++++++Another example:+++++++++
 		
 		var forecast = [
@@ -59,7 +58,7 @@
 		console.log(sunnyDays);
 		
 		
-		//==============================Map:
+		//==============================Maps:
 		
 		//MAP() - Creates a new array with the results of calling a provided function on every element of an array. ++++++++++++++++++++
 		
@@ -83,6 +82,81 @@
 		
 		//+++++++++Another example:+++++++++
 		
+		var numbers = [5,10,15,20,25];
+		
+		//passing in each element in the numbers array.
+		var triples = numbers.map(function(numElement){
+			return numElement*3; //return each Numbers element *3, and store in 'triples' array.
+		})
+		
+		console.log(triples);
+		
+		
+		//+++++++++Another example (with chaining):+++++++++
+		
+		var triples2 = numbers.map(function(numElement){
+			return numElement*3; 
+		}).map(function(numElement){
+			return numElement+1; 
+		})
+		
+		console.log(triples2);
+		
+		
+		//+++++++++Another example:+++++++++
+		
+		var smallFont = ["yo", "hi", "hello"];
+		
+		var largeFont = smallFont.map(function(word){
+			return word.toUpperCase();
+		})
+		
+		
+		//before 1st element removal:
+		console.log(largeFont);
+		
+		//remove first element from the array and store it into another var:
+		var firstWord = largeFont.shift(); 
+		console.log(firstWord);
+		
+		//after 1st element removal:
+		console.log(largeFont);
+		
+		//==============================Reduce:
+		
+		/*
+		Reduce() - Applies a function against an 'Accumulator' and each value of the array (from left to right)
+		to reduce it to a single value.
+		*/
+		
+		/*
+		array.reduce(function(accumulator, currValue, currIndex, arr)initialVal)
+		
+		accumulator (required): accumulated result of the reduction so far (from each callback). If there is an optionally added initial value, this will be stored in here.
+		currValue (required): holds the current value of the element
+		currIndex (optional): the array index of the current element
+		array (optional): The array object that the current element belongs to
+		initialVal (optional): An optional initial value
+		*/
+		
+		var numbers = [1,2,3,4];
+		
+		numbers.reduce(function(accumulator,currValue,currIndex,array){
+			return accumulator + currValue;
+		},5); //giving the method an optional initial value
+		
+		/*
+					accumulator | currValue | currIndex | array | RESULT
+		1st call:		5			 1			0		 numbers	6	
+		2nd call:		6			 2			1		 numbers	8
+		3rd call:		8			 3			2		 numbers	11
+		4th call:		11			 4			3		 numbers	15
+		
+		*/
+		
+		
+		//+++++++++Another example:+++++++++
+		var multArr = [[0,1],[2,3],[4,5]];
 		
 		
 		
@@ -90,14 +164,7 @@
 		
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
+	
 		
 		
 	</script>
