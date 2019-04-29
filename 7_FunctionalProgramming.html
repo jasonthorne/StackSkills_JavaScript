@@ -82,10 +82,10 @@
 		
 		//+++++++++Another example:+++++++++
 		
-		var numbers = [5,10,15,20,25];
+		var numbers1 = [5,10,15,20,25];
 		
 		//passing in each element in the numbers array.
-		var triples = numbers.map(function(numElement){
+		var triples = numbers1.map(function(numElement){
 			return numElement*3; //return each Numbers element *3, and store in 'triples' array.
 		})
 		
@@ -94,7 +94,7 @@
 		
 		//+++++++++Another example (with chaining):+++++++++
 		
-		var triples2 = numbers.map(function(numElement){
+		var triples2 = numbers1.map(function(numElement){
 			return numElement*3; 
 		}).map(function(numElement){
 			return numElement+1; 
@@ -198,22 +198,43 @@
 			return a+b.batter; //b is an object, so return the value of it's 'batter' property
 		}, 0);
 		
-		console.log(totalHomers); //show results
+		console.log("totalHomers: " + totalHomers); //show results
 		
 		
 		//+++++++++Another example:+++++++++
 		
+		var numbers1 = [5,10,15,50,25];
+		
+		var addedNumbers = numbers1.reduce(function (x,y){
+			//console.log(x, y);
+			return x+y;
+		});
+		
+		console.log("addedNumbers: " + addedNumbers);  //show results
+		
+		//find largest number in array:
+		var largestNumber = numbers1.reduce(function (accumulator,currentValue){
+			if(accumulator > currentValue){
+				return accumulator;
+			}else return currentValue;
+		});
+		
+		console.log("largestNumber: " + largestNumber);  //show results
 		
 		
+		//+++++++++Another example:+++++++++
 		
+		//use map on all elements of an array, then use reduce to return a single value of the new array:
 		
+		var testNums = [1,2,3,4];
 		
+		var triples = testNums.map(function(number){
+			return number*3;
+		}).reduce(function(a,b){
+			return a+b;
+		},0);
 		
-		
-		
-		
-		
-		
+		console.log("triples: " + triples);  //show results
 		
 		
 		
