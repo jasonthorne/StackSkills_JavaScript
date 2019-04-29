@@ -141,9 +141,9 @@
 		
 		var numbers = [1,2,3,4];
 		
-		numbers.reduce(function(accumulator,currValue,currIndex,array){
+		var reduceVal1 = numbers.reduce(function(accumulator,currValue,currIndex,array){
 			return accumulator + currValue;
-		},5); //giving the method an optional initial value
+		},5); //giving the method an optional initial value of 5
 		
 		/*
 					accumulator | currValue | currIndex | array | RESULT
@@ -154,13 +154,27 @@
 		
 		*/
 		
+		console.log(reduceVal1); //show results
 		
 		//+++++++++Another example:+++++++++
+		
+		//turning a multiarray into one array:
 		var multArr = [[0,1],[2,3],[4,5]];
 		
 		
+		multArr.reduce(function(accumulator, currentValue, currentIndex, array){
+			console.log(accumulator);
+			return accumulator.concat(currentValue);
+		}, []); //adding an initial array to hold final value(meaning out indexes are off my 1 ([-2,-1])
 		
 		
+		/*
+					accumulator  | currValue | currIndex | array |   RESULT
+		1st call:  [-2,-1]	         [0,1]		0		 multArr  [-2,1,0,1]	
+		2nd call:  [-2,1,0,1]	     [2,3]		1		 multArr  [-2,1,0,1,2,3]
+		3rd call:  [-2,1,0,1,2,3]	 [4,5]		2		 multArr  [-2,1,0,1,2,3,4,5]
+		
+		*/
 		
 		
 		
