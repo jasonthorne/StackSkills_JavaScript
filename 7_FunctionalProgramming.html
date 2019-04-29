@@ -147,10 +147,10 @@
 		
 		/*
 					accumulator | currValue | currIndex | array | RESULT
-		1st call:		5			 1			0		 numbers	6	
-		2nd call:		6			 2			1		 numbers	8
-		3rd call:		8			 3			2		 numbers	11
-		4th call:		11			 4			3		 numbers	15
+		1st call:		5			 1			 0		 numbers	6	
+		2nd call:		6			 2			 1		 numbers	8
+		3rd call:		8			 3			 2		 numbers	11
+		4th call:		11			 4			 3		 numbers	15
 		
 		*/
 		
@@ -162,23 +162,61 @@
 		var multArr = [[0,1],[2,3],[4,5]];
 		
 		
-		multArr.reduce(function(accumulator, currentValue, currentIndex, array){
-			console.log(accumulator);
+		var reduceVal2 = multArr.reduce(function(accumulator, currentValue, currentIndex, array){
+			//console.log(accumulator);
 			return accumulator.concat(currentValue);
-		}, []); //adding an initial array to hold final value(meaning out indexes are off my 1 ([-2,-1])
+		}, []); //adding an initial array to hold final value(meaning out indexes are off by 1 ([-2,-1])
 		
 		
 		/*
-					accumulator  | currValue | currIndex | array |   RESULT
-		1st call:  [-2,-1]	         [0,1]		0		 multArr  [-2,1,0,1]	
-		2nd call:  [-2,1,0,1]	     [2,3]		1		 multArr  [-2,1,0,1,2,3]
-		3rd call:  [-2,1,0,1,2,3]	 [4,5]		2		 multArr  [-2,1,0,1,2,3,4,5]
+					accumulator  | currValue | currIndex | array |  RESULT
+		1st call:  [-2,-1]	         [0,1]		  0		  multArr  [-2,-1,0,1]	
+		2nd call:  [-2,-1,0,1]	     [2,3]		  1		  multArr  [-2,-1,0,1,2,3]
+		3rd call:  [-2,-1,0,1,2,3]	 [4,5]		  2		  multArr  [-2,-1,0,1,2,3,4,5]
 		
 		*/
 		
-		
-		
+		console.log(reduceVal2); //show results
 	
+		//+++++++++Another example:+++++++++
+		
+		//array of objects with properties and values:
+		var homeRuns = [
+			{batter: 12},
+			{batter: 21},
+			{batter: 28},
+			{batter: 42},
+			{batter: 31},
+			{batter: 22},
+			{batter: 17},
+			{batter: 16},
+			{batter: 5}
+		];
+		
+		var totalHomers = homeRuns.reduce(function(a,b){ //a is accumulator, b is currentValue
+			//console.log("accumulator: " +  a +  " currentValue: " + b);
+			return a+b.batter; //b is an object, so return the value of it's 'batter' property
+		}, 0);
+		
+		console.log(totalHomers); //show results
+		
+		
+		//+++++++++Another example:+++++++++
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 	</script>
