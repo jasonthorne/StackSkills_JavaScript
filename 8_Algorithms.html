@@ -27,11 +27,10 @@
 		console.log(car.lastIndexOf("i")); //result: 9 (returns the LAST element where there was a match)
 		
 		var myString1 = "asdfjkl;";
+		var myString2 = "soob";
 		
 		var testString = function(aString){
-			
-			console.log(aString); 
-			
+		
 			for(var i=0;i<aString.length;i++){
 				//check if the 1st and last instances of character are the same
 				if (aString.indexOf(aString[i]) !== aString.lastIndexOf(aString[i]))
@@ -42,6 +41,12 @@
 		}; 
 		
 		console.log(testString(myString1));
+		console.log(testString(myString2));
+		
+		
+		//==============================Identify longest word in a String:
+		
+		
 		
 	</script>
     <body>
