@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	</head>
+	<script type="text/javascript">
+	
+		//==============================Identify Unique String:
+	
+		//Algorithm: A self-contained, step-by-step set of operations to be performed.
+		
+		/*
+		Implement an algorythm to determine if a string has all unique characters, using:
+		
+		+ forLoop
+		+ conditional Statement
+		+ String.indexof()
+		+ String.lastindexof()
+		*/
+		
+		//indexOf()
+		var car = "honda civic";
+		console.log(car.indexOf("civic")); //result: 6 (first element in which the match begins)
+		console.log(car.indexOf("civil")); //result: -1 (meaning no match for string)
+		console.log(car.indexOf("i")); //result: 7 (returns the FIRSR element where there is a match)
+		
+		//lastIndexOf() - index of the last place where we found a match.
+		console.log(car.lastIndexOf("i")); //result: 9 (returns the LAST element where there was a match)
+		
+		var myString1 = "asdfjkl;";
+		
+		function testString(name, foodtype, kingOfJungle){
+			this.name = name;
+			this.foodtype = foodtype;
+			this.kingOfJungle = kingOfJungle;
+		}
+		
+	</script>
+    <body>
+       
+    </body>
+</html>

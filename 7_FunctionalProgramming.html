@@ -23,7 +23,7 @@
 		
 		var testNums = [92, 87, 54, 63, 75, 59];
 		
-		var passingTest = function(test){ //assigned the value of an anonymous function
+		var passingTest = function(test){ //assigned the value of an anonymous function. ('test' arg is each element of array)
 			return test > 60; //returns true or false
 		}
 		
@@ -230,16 +230,14 @@
 		
 		var triples = testNums.map(function(number){
 			return number*3;
-		}).reduce(function(a,b){
-			return a+b;
+		}).reduce(function(a,b){ //a is accumulator value, b is current element value
+			return a+b; //accumulator returns are: 3,6,9 & 12, giving final result of 30
 		},0);
 		
 		console.log("triples: " + triples);  //show results
 		
 		
-		
-		
-		
+	
 	</script>
     <body>
        
