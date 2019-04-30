@@ -28,11 +28,20 @@
 		
 		var myString1 = "asdfjkl;";
 		
-		function testString(name, foodtype, kingOfJungle){
-			this.name = name;
-			this.foodtype = foodtype;
-			this.kingOfJungle = kingOfJungle;
-		}
+		var testString = function(aString){
+			
+			console.log(aString); 
+			
+			for(var i=0;i<aString.length;i++){
+				//check if the 1st and last instances of character are the same
+				if (aString.indexOf(aString[i]) !== aString.lastIndexOf(aString[i]))
+				return false; //if not true that they are equal, return false
+			}
+			return true;
+			
+		}; 
+		
+		console.log(testString(myString1));
 		
 	</script>
     <body>
