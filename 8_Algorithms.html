@@ -29,7 +29,7 @@
 		var myString1 = "asdfjkl;";
 		var myString2 = "soob";
 		
-		var testString = function(aString){
+		var testUnique = function(aString){
 		
 			for(var i=0;i<aString.length;i++){
 				//check if the 1st and last instances of character are the same
@@ -40,11 +40,53 @@
 			
 		}; 
 		
-		console.log(testString(myString1));
-		console.log(testString(myString2));
+		console.log(testUnique(myString1));
+		console.log(testUnique(myString2));
 		
 		
 		//==============================Identify longest word in a String:
+		
+		/*
+		using: 
+		+ forLoop
+		+ if statement
+		+ string.split() //splits an array into an array of substrings
+		*/
+		
+		//string.split():
+		
+		var car = "honda civic";
+		
+		console.log(car.split()); //passing no args gives an array with an element at index 0.
+		console.log(car.split("")); //passing an empty string gives an array, with every char getting a substring in the array
+		console.log(car.split(" ")); //passing an empty string WITH A SPACE gives an array with 2 elements , each containing a word from the string.
+		
+		var testlength = function(aString){
+		
+			//split string into words:
+			var splitWords = aString.split(" "); //spilt words into separate elements
+			//var longestWord = 0;
+			var laongest word = " ";
+			
+			//compare each word against the others.
+			for(var i=0;i<splitWords.length;i++){
+				
+				/*
+				if (splitWords[i].length > longestWord){ //if word length at index is bigger than longestWord 
+					longestWord = splitWords[i].length; //assign new value to longestWord
+				}
+				*/
+				
+				if(longestWord.length < words[i].length){
+					
+				}
+				
+			}
+			//return longestWord; //return the amount of the longest word
+		}; 
+		
+		console.log("Longest word is: " + testlength("in the name of the wee man")); 
+		
 		
 		
 		
