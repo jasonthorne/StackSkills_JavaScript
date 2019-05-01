@@ -66,7 +66,7 @@
 			//split string into words:
 			var splitWords = aString.split(" "); //spilt words into separate elements
 			//var longestWord = 0;
-			var laongest word = " ";
+			var longestWord = " ";
 			
 			//compare each word against the others.
 			for(var i=0;i<splitWords.length;i++){
@@ -77,17 +77,37 @@
 				}
 				*/
 				
-				if(longestWord.length < words[i].length){
-					
+				if(longestWord.length < splitWords[i].length){
+					longestWord = splitWords[i];
 				}
 				
 			}
-			//return longestWord; //return the amount of the longest word
+			return longestWord; //return the amount of the longest word
 		}; 
 		
 		console.log("Longest word is: " + testlength("in the name of the wee man")); 
 		
 		
+		//==============================Permutation of two strings:
+		
+		//Check if two strings have the same type of characters and the same number of characters (regardless of order). 
+		
+		/*
+		using: 
+		+ string.split() //splits an array into an array of substrings
+		+ array.sort() //sorts the elements of an array and returns it sorted
+		+ array.join() //joins all the elements of an array into a string
+		*/
+		
+		//array.sort()
+		var state = ["Zebra", "Camel", "Bear"];
+		console.log(state.sort());
+		
+		var scores = [3,30,1,11]; //sorted by string unicode, so results are: [1,11,3,30]
+		console.log(scores.sort());
+		
+		//array.join()
+		var car = "honda civic";
 		
 		
 	</script>
