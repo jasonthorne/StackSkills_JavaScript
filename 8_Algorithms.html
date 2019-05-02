@@ -183,11 +183,9 @@
 		console.log(array2);
 		
 		var removeElements = function(myArray, myNum){
-			
-			//'trash' needed to store the removed elements during splice
-			var trash = myArray.splice(0,(myNum)); 
+		
+			myArray.splice(0,(myNum)); //needed splicing BEFORE return statement (couldn't be done together with return)
 			return myArray;
-
 		};
 		
 		var test1 = ["sonic", "mario", "alex kid"];
