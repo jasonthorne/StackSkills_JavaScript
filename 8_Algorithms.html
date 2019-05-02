@@ -92,13 +92,6 @@
 		
 		//Check if two strings have the same type of characters and the same number of characters (regardless of order). 
 		
-		/*
-		using: 
-		+ string.split() //splits an array into an array of substrings
-		+ array.sort() //sorts the elements of an array and returns it sorted
-		+ array.join() //joins all the elements of an array into a string
-		*/
-		
 		//array.sort()
 		var state = ["Zebra", "Camel", "Bear"];
 		console.log(state.sort());
@@ -126,6 +119,80 @@
 		//check for permutations:
 		console.log(checkPermutation("bob", "obb")); //true
 		console.log(checkPermutation("tim", "mig")); //false 
+		
+		
+		//==============================Sum of Range:
+		
+		//Given an input of two values, find the sum of those numbers within a range
+		
+		/*
+		eg:[1,4]
+		1+2+3+4=10
+		
+		eg:[5,2]
+		5+4+3+2=14
+		
+		using: 
+		+ math.max() //return the value of the largest number 
+		+ math.min() //return the value of the smallest number 
+		+ forLoop 
+		*/
+		
+		console.log(Math.max(5,20)); //returns 20
+		console.log(Math.min(5,20)); //returns 5
+		
+		var findRange = function(myArray){
+			
+			var maxNum = Math.max(myArray[0],myArray[1]);
+			var minNum = Math.min(myArray[0],myArray[1]);
+			var total=0;
+			
+			for(var i=minNum;i<=maxNum;i++){
+				total +=i;
+			}
+			console.log(total);
+		};
+		
+		//find sum of ranges:
+		findRange([1,4]); //returns 10
+		findRange([5,2]); //returns 14
+		
+		
+		//==============================Remove elements from Head:
+		
+		/*
+		Given a array of elements, create an algorithm 
+		to return its value after cutting off x amount of elements from its head. 
+		
+		eg:
+		original array: ["car", "boat", "bus"] Target num: 1 -> result: ["boat", "bus"]
+		*/
+		
+		//array.slice():
+		//DOSNT alter the original array, but returns an altered COPY of the array
+		var array1 = ["car", "boat", "bus"];
+		var sliceArray1 = array1.slice(0,1);
+		console.log(sliceArray1);  //returns ["car"]
+		console.log(array1); //array untouched
+		
+		//array.splice():
+		//CHANGES the content of an array by removing existing elements and/or adding new elements
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		
