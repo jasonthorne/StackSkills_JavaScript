@@ -169,33 +169,32 @@
 		*/
 		
 		//array.slice():
-		//DOSNT alter the original array, but returns an altered COPY of the array
+		//DOESNT alter the original array, but returns an altered COPY of the array
 		var array1 = ["car", "boat", "bus"];
-		var sliceArray1 = array1.slice(0,1);
-		console.log(sliceArray1);  //returns ["car"]
+		var sliceArray = array1.slice(0,1);
+		console.log(sliceArray);  //returns ["car"]
 		console.log(array1); //array untouched
 		
 		//array.splice():
 		//CHANGES the content of an array by removing existing elements and/or adding new elements
+		var array2 = ["cat", "dog", "chicken"];
+		var spliceArray = array2.splice(0,1);
+		console.log(spliceArray);  //returns ["cat"]
+		console.log(array2);
 		
+		var removeElements = function(myArray, myNum){
+			
+			//'trash' needed to store the removed elements during splice
+			var trash = myArray.splice(0,(myNum)); 
+			return myArray;
+
+		};
 		
+		var test1 = ["sonic", "mario", "alex kid"];
+		console.log(removeElements(test1, 2));
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		var test2 = ["red", "green", "black", "blue", "white"];
+		console.log(removeElements(test2, 3));
 		
 		
 	</script>
