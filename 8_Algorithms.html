@@ -108,6 +108,27 @@
 		
 		//array.join()
 		var car = "honda civic";
+		var splitCar = car.split(""); //an empty string splits each character into it's own element in the returning array.
+		console.log(splitCar);
+		var joinCar = splitCar.join(""); //join car back to a string
+		console.log(joinCar);
+		
+		console.log(car.split(" ")); //returns each word as a separate element in the returning array. 
+		
+		var checkPermutation = function(word1, word2){
+			
+			//console.log(word1.split("").sort().join(""));
+			//console.log(word2.split("").sort().join(""));
+	
+			return word1.split("").sort().join("") == word2.split("").sort().join("");
+		};
+		
+		//check for permutations:
+		console.log(checkPermutation("bob", "obb")); //true
+		console.log(checkPermutation("tim", "mig")); //false 
+		
+		
+		
 		
 		
 	</script>
