@@ -206,7 +206,7 @@
 		
 			/patternToMatch/modifier(s) eg: milk/i 
 		
-			match any NON WORD character: /\w/ 
+			match any NON WORD character: /\W/ 
 		
 			global modifier: g
 		
@@ -216,19 +216,27 @@
 		  The pattern can be a string or a REGEX. 
 		  The replacement can be a string or a function to be called for each match.
 		
-			str.replace(regexp|substr,newSubStr|function)
+			str.replace(regexp/substr,newSubStr/function)
 		*/
 		
+		var milkAdd = "Drink more milk";
+		var substringMilkAlt = milkAdd.replace("milk", "silk"); //using replace with a substring arg
+		console.log(substringMilkAlt);
 		
+		var regexMilkAlt = milkAdd.replace(/milk/, "irn bru"); //using replace with a regex arg
+		console.log(regexMilkAlt);
 		
+		var paladrone = function(myString){
+			
+			myString = myString.replace(/\W/g, "").toLowerCase(); //replace ALL (g) non word characters (W) with empty character and lower case
+			if (myString == myString.replace(/\W/g, "").toLowerCase().split("").reverse().join("")){ //check if string == reversed string
+				return myString;
+			}else
+				return myString + " isn't a palindrome!";
+		};
 		
-		
-		
-		
-		
-		
-		
-		
+		console.log(paladrone("b%-O*B")); //palindrome
+		console.log(paladrone("fr!An?K")); //not a palindrome
 		
 		
 	</script>
