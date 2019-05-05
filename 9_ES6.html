@@ -3,7 +3,56 @@
     <head>
 	</head>
 	<script type="text/javascript">
-		console.log("Yo");
+		//==============================Let Statements:
+		
+		/*
+		Let Statement:
+		Allows for BLOCK SCOPE to declare a local variable. 
+		This differs from the VAR keyword, which declares a variable
+		globally or locally (to the scope of a function).
+		*/
+		
+		//VAR & LET:
+	
+		//Both can be assigned & reassigned:
+		var greeting = "yo";
+		greeting = "sup";
+		let name = "Biggles";
+		name = "Archibald the 3rd";
+		
+		//VAR keyword can be used again on an already declared variable:
+		var greeting = "howdy"; //no error
+		
+		//Let however, causes a syntax error known as a "Temporal Dead Zone"
+		//let name = "Cuthbert"; 
+		
+		
+		//-----------------
+		//Function Scope (using vars)
+		
+		var count1 = 4; //global scope
+		
+		if (true){
+			var more1 = 1; //also global scope (as not in a function)
+		}
+		
+		console.log(count1 + more1); //both vars are visible
+		
+		//-----------------
+		//Block Scope (using let)
+		
+		let count2 = 6; 
+		
+		if (true){
+			let more2 = 2; //variable is scoped ONLY to this block
+		}
+		
+		//console.log(count2 + more2); //gives error that more2 is not defined globally
+		//-----------------
+		
+		
+		
+		
 	</script>
     <body>
        
