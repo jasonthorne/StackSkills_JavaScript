@@ -28,7 +28,7 @@
 		
 		
 		//-----------------
-		//Function Scope (using vars)
+		//Function Scope (using vars):
 		
 		var count1 = 4; //global scope
 		
@@ -39,7 +39,7 @@
 		console.log(count1 + more1); //both vars are visible
 		
 		//-----------------
-		//Block Scope (using let)
+		//Block Scope (using let):
 		
 		let count2 = 6; 
 		
@@ -47,11 +47,28 @@
 			let more2 = 2; //variable is scoped ONLY to this block
 		}
 		
-		//console.log(count2 + more2); //gives error that more2 is not defined globally
-		//-----------------
+		//console.log(count2 + more2); //gives error that 'more2' is not defined globally
+		
+		//==============================Const Statement:
+		/*
+		Const:
+		Creates a value that is a READ-ONLY reference. It can be either global of local
+		to the function or block in which it's declared, as you cant change the reference
+		or literal that is assigned to it.
 		
 		
+				CONST 	   | 		LET			| 		 VAR
+		------------------------------------------------------------
+			block scoped   | 	block scoped 	| 	function scoped
+						   |					|
+		temporal dead zone | temporal dead zone | 
+						   |					|
+			read only	   |	reassign value	| 	reassign value
 		
+		*/
+		
+		const API_KEY = "can't change me, sucka!";
+		//API_KEY = "No dice!";
 		
 	</script>
     <body>
