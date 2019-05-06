@@ -3,7 +3,7 @@
     <head>
 	</head>
 	<script type="text/javascript">
-		//==============================Let Statements:
+		//==============================Let Statements==============================
 		
 		/*
 		Let Statement:
@@ -49,7 +49,8 @@
 		
 		//console.log(count2 + more2); //gives error that 'more2' is not defined globally
 		
-		//==============================Const Statement:
+		//==============================Const Statement:==============================
+		
 		/*
 		Const:
 		Creates a value that is a READ-ONLY reference. It can be either global of local
@@ -69,6 +70,47 @@
 		
 		const API_KEY = "can't change me, sucka!";
 		//API_KEY = "No dice!";
+		
+		
+		//==============================Template Literals==============================
+		/*
+		Template Literal:
+		+ Template literals are ENCLOSED by the BACK TICK.
+		+ They replace the string or double quotes used in strings.
+		+ They may contain placeholders: 
+			- Indicated by the dollar sign and curly braces.
+			- The expressions in the placeholders (including text contained between them) are passed to a function.
+			- The parts are concatenated by the default function into a single string.
+		*/
+		
+		//New lines: 
+		var sentence = `back ticks instead of 
+		quotes also allow for carriage return.`;
+		console.log(sentence);
+		
+		//-----------
+		//Template Literal example:
+		var topping1 = "pepperoni";
+		var topping2 = "anchovies";
+		
+		//no need for concatenating strings and adding necessary spaces! 
+		var pizzaToppings = `My favourite pizza has ${topping1} and ${topping2}!`; 
+		console.log(pizzaToppings);
+		
+		//-----------
+		//Another example:
+		
+		var pizza = {
+			topping1:"pepperoni",
+			topping2: "anchovies",
+			favouritePizza: function(){
+				return `My favourite pizza has ${topping1} and ${topping2}!`;
+			}
+		}
+		
+		console.log(pizza.favouritePizza());
+		
+		
 		
 	</script>
     <body>
