@@ -110,6 +110,52 @@
 		
 		console.log(pizza.favouritePizza());
 		
+		//==============================Arrow Functions:==============================
+		/*
+		Arrow Functions (=>):
+		A more concise syntax for writing function expressions.
+		They are anonymous and change the way "this" binds in functions.
+		*/
+		
+		//traditional function:
+		var myFunc1 = function(){ //assigning a variable the value of an anonymous function (with no params)
+			return 2;
+		}
+		
+		//Arrow function:
+		var myFunc2 = () => 2;
+		
+		/*
+		+ NO 'function' keyword.
+		+ The parentheses are sometimes optional. (NEEDED HERE as there are no input params).  
+		+ Implicit return, without needing curly braces.
+		*/
+		
+		
+		//-----------
+		//Arrow function with one parameter: (parentheses optional)
+		
+		var cubed;
+		//example1:
+		cubed = x => x*x*x; //x is input param. x*x*x is implicit return.
+		//example2:
+		cubed = x => {return x*x*x}; //adding a block body requires an explicit return statement.
+		//example3:
+		cubed = (x) => x*x*x; //parentheses around input param. Implicit return.
+		//example4:
+		cubed = (x) => {return x*x*x}; //parentheses around input param. Block body requiring an explicit return
+		
+		
+		//-----------
+		//Arrow function with twp parameters: (parentheses NEEDED!)
+		
+		var add;
+		//example1:
+		add = (x,y) => x+y; //x and y are input params. x+y is implicit return.
+		//example2:
+		add = (x,y) => {return x+y}; //adding a block body requires an explicit return statement.
+		//example3:
+		add = (x,y,z) => x+y+z; //3 input params.
 		
 		
 	</script>
