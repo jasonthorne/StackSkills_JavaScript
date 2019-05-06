@@ -114,7 +114,7 @@
 		/*
 		Arrow Functions (=>):
 		A more concise syntax for writing function expressions.
-		They are anonymous and change the way "this" binds in functions.
+		They are ANONYMOUS and change the way "this" binds in functions.
 		*/
 		
 		//traditional function:
@@ -156,6 +156,17 @@
 		add = (x,y) => {return x+y}; //adding a block body requires an explicit return statement.
 		//example3:
 		add = (x,y,z) => x+y+z; //3 input params.
+		
+		//-----------
+		//Arrow function using map function: 
+		
+		var numbers = [2,4,6,8];
+		//traditional way:
+		var squareNums1 = numbers.map(function(n){return n*n});
+		console.log("Traditional way: ", squareNums1);
+		//Arrow function way:
+		var squareNums2 = numbers.map((n) => n*n);
+		console.log("Arrow function way: ", squareNums2);
 		
 		
 	</script>
