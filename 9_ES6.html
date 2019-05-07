@@ -169,6 +169,55 @@
 		console.log("Arrow function way: ", squareNums2);
 		
 		
+		//==============================Spread Operator:==============================
+		/*
+		Spread Operator: 
+		Allows an expression  to be expanded in places where multiple arguments (for function calls)
+		or multiple elements (for array literals) or multiple variables (for destructuring assignment)
+		are expected.
+		
+		syntax: ...
+		 
+		*/
+		
+		//=====================
+		//Arrays:
+		var letters = ["a","b","c"];
+		console.log(letters); //gives: ["a","b","c"]
+		console.log(...letters); //gives the values individually: a b c
+		
+		//traditional join:
+		var array1 = ["a","b","c"];
+		var array2 = ["d","e","f"];
+		var joinArray1 = array1.concat(array2);
+		console.log(joinArray1);
+		
+		//join with spread operator:
+		var bet = ["d","e","f"];
+		var alphabet = ["a","b","c",...bet]; 
+		console.log(alphabet);
+		
+		//=====================
+		//Functions:
+		//'spread' allows you to spread out the values of an array as if they were arguments
+		
+		var myArray = [1,2,3];
+		
+		function productOfThree(a,b,c){
+			let result = a*b*c;
+			console.log(result);
+		}
+		
+		//traditional way of passing elements as arguments:
+		productOfThree(myArray[0], myArray[1], myArray[2]); 
+		
+		//same thing, using spread:
+		productOfThree(...myArray);
+		
+		
+		
+		
+		
 	</script>
     <body>
        
