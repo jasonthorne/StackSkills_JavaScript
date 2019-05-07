@@ -184,7 +184,7 @@
 		//Arrays:
 		var letters = ["a","b","c"];
 		console.log(letters); //gives: ["a","b","c"]
-		console.log(...letters); //gives the values individually: a b c
+		console.log(...letters); //gives the values individually ('opens up' the items): a b c
 		
 		//traditional join:
 		var array1 = ["a","b","c"];
@@ -213,6 +213,13 @@
 		
 		//same thing, using spread:
 		productOfThree(...myArray);
+		
+		//----
+		var myArray = ["ran", "bathroom", "quickly"];
+		var myFunction = (a, b, c) => `I ${a} to the ${b} and ${c} sat down!`; //using Arrow function to return a string with template literals. 
+		
+		console.log(myFunction(...myArray)); //using 'spread' to provide array elements as arguments to function.
+		//----
 		
 		
 		
