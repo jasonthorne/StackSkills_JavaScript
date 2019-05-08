@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	</head>
+	<script type="text/javascript">
+		//==============================Reverse a String:==============================
+		
+		/*create a function that accepts a string (of a person's first and last name)
+		and returns a string with the first and last name swapped
+		*/
+		
+		//traditional function:
+		function nameShuffle(name){
+			return name.split(" ").reverse().join(" ");
+		}
+		
+		//Arrow function:
+		shuffleName = (x) => x.split(" ").reverse().join(" ");
+		
+		console.log(nameShuffle("John Smith")); //traditional function
+		console.log(shuffleName("Tim Apple")); //Arrow function
+		
+		
+		
+		
+	</script>
+    <body>
+       
+    </body>
+</html>
