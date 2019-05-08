@@ -47,7 +47,33 @@
 		console.log(filterArray2(["z",3,5,"t"])); //arrow function
 		
 		
+		//==============================Find the largest number in an Array:==============================
 	
+		//Create a function that takes an array of numbers. Return the largest number in the array
+		
+		//traditional way:
+		function findLargestNum1(myArray){
+			
+			var largestNum = 0;
+			
+			for(var i=0;i<myArray.length;i++){
+				if (largestNum < myArray[i]){
+					largestNum = myArray[i]
+				}
+			}
+			return largestNum;
+		}
+		
+		//using Math.max & spread:
+		function findLargestNum2(myArray){
+		
+			return Math.max(...myArray); //return the largest array element
+		}
+		
+		console.log(findLargestNum1([1,60,8,9,3])); //traditional way
+		console.log(findLargestNum2([3,9,1,200])); //using Math.max & spread
+		
+		
 	</script>
     <body>
        
