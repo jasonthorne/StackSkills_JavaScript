@@ -1,6 +1,72 @@
 
-/*selector with property and value*/
-body{ /*body contains all visible html*/
-	color: blue; /*property and value*/
-	text-align: center;
+/*
+selector(html tag, class or id){
+	declaration (property: value;)
 }
+
+tag selector: tagName
+class selector: .className
+id selector: #idName
+
+*/
+/* --------------------------------------------------------------------- */
+/* css reset stuff */
+
+body{ /*selector 'body' contains all visible html*/
+	margin: 0; /*amount of space wanted around the body */
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+/* --------------------------------------------------------------------- */
+/* Main styles */
+
+
+/* Header styles */
+header{
+	background: #222222; /*bg colour*/
+	color: #ffffff; /*text colour*/
+	padding: 20px 30px; /*top & bottom: 20px,  right & left: 30px*/
+}
+
+
+/* 'Logo' inside header */
+header #page-header{ /* page-header h2 inside header tag*/
+	color: #ffffff;
+	text-decoration: none;
+	width: 49%; /* puts on one half of the page (left aligned by default)*/
+	display: inline-block; /* Allows element to sit on the same line when the browesr window is expanded */
+	
+}
+
+/* img inside header*/
+header img {
+	width: 50px;
+	border-radius: 50px; /* circles the image border*/
+	margin-right: 8px; /* pushes the right margin 8px*/
+	vertical-align: middle; /* puts image into the middle of its allowed height*/
+}
+
+/* targeting header h2 tag (not really needed as it's id of 'page-header' is already targeted above)*/
+header h2{
+	font-size: 16px;
+}
+
+/* Main navigation */
+
+
+header #main-navigation{
+	
+}
+
+
+
+
+
+
+
+
+
+
+
