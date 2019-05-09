@@ -36,7 +36,7 @@ header #page-header{ /* page-header h2 inside header tag*/
 	color: #ffffff;
 	text-decoration: none;
 	width: 49%; /* puts on one half of the page (left aligned by default)*/
-	display: inline-block; /* Allows element to sit on the same line when the browesr window is expanded */
+	display: inline-block; /* Allows element to sit on the same line when the browser window is expanded */
 	
 }
 
@@ -57,16 +57,30 @@ header h2{
 
 
 header #main-navigation{
-	
+	width: 49%;
+	display: inline-block;  /* keeps element on the same level as h2*/
+	text-align: right; /* align text to the right of page */
 }
 
 
+header #main-navigation ul{
+	list-style: none;
+	padding: 0;
+}
 
+header #main-navigation ul li{
+	display: inline-block;
+}
 
+header #main-navigation ul li a{
+	color: #ffffff;
+	text-decoration: none;
+	padding: 10px 15px; /*top & bottom: 10px,  right & left: 15px*/
+}
 
-
-
-
-
-
+header #main-navigation ul li a:hover{
+	color: #444444;
+	border-radius: 3px;
+	transition: 0.3s ease all;
+}
 
