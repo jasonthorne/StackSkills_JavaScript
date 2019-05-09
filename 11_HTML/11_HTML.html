@@ -14,11 +14,11 @@
 		+ <anchor> defines a hyperlink, which is used to link from one page to another, or to different parts of the same page.
 		+ <div> container unit that encapsulates other page elements and divides the html document into sections. used for BLOCK LEVEL content.
 		+ <img> defines an image in a html page. It has NO closing tag. REQUIRES 'src=' and 'alt=' attributes.
-		+ <span> used for grouping and applying styles to inline elements. Differs from div as is used with INLINE elements.
+		+ <span> used for grouping and applying styles to INLINE elements. Differs from div as is used with INLINE elements.
 		+ <footer> contains: authorship info, copyright info, contact info, sitemap, links to top, related documents.
 		+ class - used on multiple elements
 		+ id - used on ONE element only
-		
+		 
 		
 		 https://www.flaticon.com/free-icon/farmer_146742#term=farmer&page=2&position=52 
 		
@@ -40,7 +40,7 @@
 		<div id="page-header">
 			<!-- LOGO -->
 				<h2>
-					<img src="img/profilePic.png" alt="profile_pic"><!--pic taken from: https://www.flaticon.com/free-icons/profile -->
+					<img src="img/profilePic.png" alt="profilePic"><!--pic taken from: https://www.flaticon.com/free-icons/profile -->
 					Name | Portfolio
 				</h2>
 			<!-- NAVIAGATION -->
@@ -72,7 +72,7 @@
 					<h2>Key Services</h2>
 				</div>
 				<div class="service-box">
-					<img src="img/code.png" alt="profile_pic">
+					<img src="img/code.png" alt="code_pic">
 					<h4>JavaScript</h4>
 					<p>
 						This is where I describe something that I can do. I talk about why what I do would be desired by a client.
@@ -80,7 +80,7 @@
 					</p>
 				</div>
 				<div class="service-box">
-					<img src="img/teaching.png" alt="profile_pic">
+					<img src="img/teaching.png" alt="teaching_pic">
 					<h4>Instructor</h4>
 					<p>
 						This is where I describe something that I can do. I talk about why what I do would be desired by a client.
@@ -88,7 +88,7 @@
 					</p>
 				</div>
 				<div class="service-box">
-					<img src="img/socialMedia.png" alt="profile_pic">
+					<img src="img/socialMedia.png" alt="socialMedia_pic">
 					<h4>YouTube Channel</h4>
 					<p>
 						This is where I describe something that I can do. I talk about why what I do would be desired by a client.
@@ -98,15 +98,70 @@
 			</div>
 			
 			<!-- ABOUT -->
+			<div class="section-header about"> <!-- This dive has TWO class labels--> 
+				<h2>About Me</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+					Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</div>
 			<!--- TESTIMONIALS -->
+			<section class="testimonials-section testimonials-section-secondary"> <!-- A SECTION element with TWO class labels-->
+				<div class = "testimonials-section-inside">
+					<div class="section-header">
+						<h2>Testimonials</h2>
+					</div>
+					
+					<div class="testimonial-box">
+						<div class="testimonial-content">
+							This is where you would put a customer or mentor testimonial regarding the work that you have done
+							or the product you have provided.
+						</div>
+						<div class="testimonial-author">
+							<img src="img/girl1.png" alt="girl1">
+							<h5>Jane Doe</h5>
+							<span>Title</span>
+						</div>
+					</div>
+					
+					<div class="testimonial-box">
+						<div class="testimonial-content">
+							This is where you would put a customer or mentor testimonial regarding the work that you have done
+							or the product you have provided.
+						</div>
+						<div class="testimonial-author">
+							<img src="img/boy1.png" alt="boy1">
+							<h5>John Doe</h5>
+							<span>Title</span>
+						</div>
+					</div>
+					
+					<div class="testimonial-box">
+						<div class="testimonial-content">
+							This is where you would put a customer or mentor testimonial regarding the work that you have done
+							or the product you have provided.
+						</div>
+						<div class="testimonial-author">
+							<img src="img/girl2.png" alt="girl2">
+							<h5>Jane Doe</h5>
+							<span>Title</span>
+						</div>
+					</div>
+					
+				</div>
+			</section>
 		</div>
 		
 		<!-- FOOTER -->
 		<div id="page-footer">
-			Profile icon made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 	title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
-			<br/>Code icon made by <a href="https://www.iconfinder.com/justui">Just UI</a>
-			<br/>JavaScript icon made by <a href="https://www.iconfinder.com/Sennerstad">Sennerstad</a>
-			<br/>YouTube icon made by <a href="https://www.iconfinder.com/neilorangepeel">neilorangepeel</a>
+			<img src="img/profilePic.png" alt="profilePic">
+			<span>My Portfolio<br />&copy; 2019</span>
+			Profile icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 	title="Flaticon">www.flaticon.com</a>. Licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+			<br />Code icon made by <a href="https://www.iconfinder.com/justui">Just UI</a>
+			<br />JavaScript icon made by <a href="https://www.iconfinder.com/Sennerstad">Sennerstad</a>
+			<br />YouTube icon made by <a href="https://www.iconfinder.com/neilorangepeel">neilorangepeel</a>
 		</div>
 	   
 	   
