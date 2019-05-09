@@ -62,7 +62,6 @@ header #main-navigation{
 	text-align: right; /* align text to the right of page */
 }
 
-
 header #main-navigation ul{
 	list-style: none;
 	padding: 0;
@@ -83,4 +82,33 @@ header #main-navigation ul li a:hover{
 	border-radius: 3px;
 	transition: 0.3s ease all;
 }
+
+/* --------------------------------------------------------------------- */
+/* Footer */
+
+footer{
+	background: #222222; /*bg colour*/
+	color: #777777; /*text colour*/
+	padding: 40px;
+	text-align: center; /*pushes text to center*/
+}
+
+footer img{
+	display: block; /*prevents image from sharing space with the wording*/
+	border-radius: 5px; /*gives slightly rounded edges*/
+	width: 80px;
+	margin: 0 auto 10px; /*0 for top, auto for left and right (centering it), and 10px for bottom.*/
+}
+
+
+
+/*
+<br />Profile icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 	title="Flaticon">www.flaticon.com</a>. Licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+<br />Code icon made by <a href="https://www.iconfinder.com/justui">Just UI</a>
+<br />JavaScript icon made by <a href="https://www.iconfinder.com/Sennerstad">Sennerstad</a>
+<br />YouTube icon made by <a href="https://www.iconfinder.com/neilorangepeel">neilorangepeel</a>
+
+*/
+
+
 
