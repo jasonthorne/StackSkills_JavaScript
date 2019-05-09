@@ -1,0 +1,6 @@
+
+/*selector with property and value*/
+body{ /*body contains all visible html*/
+	color: blue; /*property and value*/
+	text-align: center;
+}
