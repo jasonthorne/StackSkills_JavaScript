@@ -100,6 +100,47 @@ footer img{
 	margin: 0 auto 10px; /*0 for top, auto for left and right (centering it), and 10px for bottom.*/
 }
 
+/* --------------------------------------------------------------------- */
+/* Hero */
+
+.hero{  /* . is for class */
+	min-height: 800ps;
+	text-align: center;
+	background: #555555; /* background colour */
+	background-image: url('../img/background.jpg'); 
+}
+
+.hero-content{
+	color: #ffffff;
+	padding-top: 130px;
+	line-height: 1;
+}
+
+
+.hero-title{
+	margin: 0;
+	font-size: 100px;
+}
+
+.hero-content p{
+	font-size: 50px;
+	margin-bottom: 60px;
+}
+
+/*
+.hero-content a{
+	color: #ffffff;
+	border: 3px solid white;
+	border-radius: 3px;
+	padding: 15px 30px;
+	margin-right: 20px;
+	text-decoration: none;
+	font-size: 28px;
+}
+*/
+
+
+
 
 
 /*
@@ -107,7 +148,7 @@ footer img{
 <br />Code icon made by <a href="https://www.iconfinder.com/justui">Just UI</a>
 <br />JavaScript icon made by <a href="https://www.iconfinder.com/Sennerstad">Sennerstad</a>
 <br />YouTube icon made by <a href="https://www.iconfinder.com/neilorangepeel">neilorangepeel</a>
-
+background: https://pixabay.com/photos/coding-programming-working-macbook-924920/
 */
 
 
