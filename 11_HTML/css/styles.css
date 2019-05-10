@@ -16,7 +16,7 @@ body{ /*selector 'body' contains all visible html*/
 	margin: 0; /*amount of space wanted around the body */
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 16px;
-	line-height: 1.5;
+	line-height: 1.5; /*space between each line*/
 }
 
 /* --------------------------------------------------------------------- */
@@ -104,10 +104,11 @@ footer img{
 /* Hero */
 
 .hero{  /* . is for class */
-	min-height: 800ps;
+	min-height: 800px; /*gives element a minimum height */
 	text-align: center;
-	background: #555555; /* background colour */
+	background: #555555; /* background colour as a default incase of issue with loading image*/
 	background-image: url('../img/background.jpg'); 
+	background-size: cover;  /*makes image take up the whole element regardless of how much space you have*/
 }
 
 .hero-content{
@@ -138,6 +139,35 @@ footer img{
 	font-size: 28px;
 }
 */
+
+/* --------------------------------------------------------------------- */
+/* Services */
+
+
+.site-section{
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
+
+.site-header{
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.site-section-inside{
+	width: 80%;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.section-header h2{
+	font-size: 30px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-weight: 300;
+	color: #777777;
+}
 
 
 
