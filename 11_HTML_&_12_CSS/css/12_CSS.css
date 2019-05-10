@@ -264,6 +264,44 @@ footer img{
 		margin-bottom: 20px;
 	}
 	
+	header #main-navigation{
+		width: 100%;
+		display: block;
+		text-align: center;
+	}
+	
+	/* HERO */
+	
+	.hero{
+		min-height: 300px;
+		
+	}
+	
+	.hero-content{
+		padding-top: 80px;
+	}
+	
+	.hero-title{
+		font-size: 30px;
+	}
+	
+	.hero-content p {
+		font-size: 16px;
+		margin-bottom: 30px;
+	}
+	
+	.hero-content a {
+		font-size: 14px;
+		padding: 10px 15px;
+		border-width: 1px;
+		background: FFFFFF;
+		color: #333333;
+	}
+	
+	
+	
+	
+	
 }
 
 
