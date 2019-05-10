@@ -41,7 +41,7 @@ header #page-header{ /* page-header h2 inside header tag*/
 }
 
 /* img inside header*/
-header img {
+header img{
 	width: 50px;
 	border-radius: 50px; /* circles the image border*/
 	margin-right: 8px; /* pushes the right margin 8px*/
@@ -149,7 +149,7 @@ footer img{
 	padding-top: 50px;
 }
 
-.site-header{
+.section-header{
 	text-align: center;
 	margin-bottom: 30px;
 }
@@ -169,6 +169,82 @@ footer img{
 	color: #777777;
 }
 
+.site-section-secondary{
+	background: #EFEFEF;
+}
+
+
+/* Service boxes */
+
+.service-box{
+	display: inline-block;
+	width: 24%;
+	padding: 20px 30px;
+	line-height: 1;
+}
+
+.service-box img{
+	width: 80px;
+	margin-bottom: 15px;
+}
+
+.service-box h5{
+	margin-top: 0;
+	margin-bottom: 15px;
+	font-size: 20px;
+	color: #999999;
+	text-transform: uppercase;
+	font-weight: 300px;
+	letter-spacing: 2px;
+}
+
+
+/* --------------------------------------------------------------------- */
+/* about */
+
+.about{
+	background: #ECF0F1;
+	width: 100%;
+	padding: 50px 0;
+}
+
+/* --------------------------------------------------------------------- */
+/* testimonials */
+
+.testimonial-box{
+	display: inline-block;
+	width: 27%;
+	padding: 20px 30px;
+}
+
+.testimonial-content{
+	background: #ECF0F1;
+	padding: 15px;
+	border-radius: 4px;
+	margin-bottom: 15px;
+}
+
+.testimonial-author{
+
+}
+
+.testimonial-author img{
+	float: left;
+	width: 80px;
+	border-radius: 50%;
+	margin-right: 15px;
+}
+
+.testimonial-author h5{
+	font-size: 18px;
+	margin: 0;
+	padding-top: 15px;
+}
+
+.testimonial-author span{
+	color: #999999;
+	font-family: 14px;
+}
 
 
 
