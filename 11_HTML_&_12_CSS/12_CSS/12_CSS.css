@@ -247,6 +247,34 @@ footer img{
 }
 
 
+/* --------------------------------------------------------------------- */
+/* Mobile Responsive */
+
+
+/* Anything inside this code block will be ran when the width of the screen is less than 768 pixels */
+@media screen and (max-width: 768px) {
+	
+	
+	/* HEADER */
+	
+	header #page-header{
+		width: 100%;
+		display: block;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /*
